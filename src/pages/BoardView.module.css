@@ -1,0 +1,67 @@
+.sectionHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge {
+  font-size: 10px;
+  background: var(--bg-elevated);
+  color: var(--text-3);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.count {
+  background: var(--accent-dim);
+  color: var(--accent-2);
+  border-radius: 10px;
+  font-size: 11px;
+  padding: 1px 7px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.filters { display: flex; gap: 3px; }
+
+.flt {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-3);
+  border-radius: var(--r-sm);
+  font-size: 11px;
+  padding: 3px 10px;
+  transition: var(--t);
+}
+.flt:hover { color: var(--text-2); border-color: var(--border-2); }
+.flt.on    { border-color: var(--accent); color: var(--accent-2); background: var(--accent-dim); }
+
+.list { display: flex; flex-direction: column; gap: 8px; }
+
+.empty {
+  text-align: center;
+  padding: 36px;
+  color: var(--text-3);
+  font-size: 13px;
+}
+
+.emptyIcon {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: var(--success);
+}

@@ -1,0 +1,71 @@
+/* ─── Reset & Base ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Core palette */
+  --bg-base:    #0b0d1a;
+  --bg-surface: #111326;
+  --bg-elevated:#181b30;
+  --bg-hover:   #1e2238;
+  --bg-input:   #141628;
+
+  /* Purple accent */
+  --accent:     #7c6af7;
+  --accent-2:   #9d8ff9;
+  --accent-3:   #c4bcfb;
+  --accent-dim: rgba(124,106,247,0.12);
+  --accent-glow:rgba(124,106,247,0.25);
+
+  /* Semantic */
+  --danger:     #e24b4a;
+  --danger-dim: rgba(226,75,74,0.12);
+  --warning:    #ef9f27;
+  --warn-dim:   rgba(239,159,39,0.12);
+  --success:    #4ade80;
+  --success-dim:rgba(74,222,128,0.10);
+  --info:       #60a5fa;
+
+  /* Text */
+  --text-1: #e8eaf0;
+  --text-2: #94a3b8;
+  --text-3: #5a6580;
+
+  /* Borders */
+  --border:   rgba(255,255,255,0.07);
+  --border-2: rgba(255,255,255,0.12);
+
+  /* Radii */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 18px;
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow-modal: 0 24px 60px rgba(0,0,0,0.6);
+
+  /* Transitions */
+  --t: 0.15s ease;
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+  background: var(--bg-base);
+  color: var(--text-1);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button { cursor: pointer; font-family: inherit; }
+input, select, textarea { font-family: inherit; }
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--bg-hover); border-radius: 10px; }
+
+/* ─── Utility ─── */
+.sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); }

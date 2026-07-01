@@ -97,4 +97,4 @@ To create a optimized static build of the app:
 ```bash
 npm run build
 ```
-The production bundle will be generated in the `dist/` directory, ready to deploy to Vercel, Netlify, or any static host.
+The production bundle will be generated in the `dist/` directory, ready to deploy to Vercel, Netlify,or any static host.
